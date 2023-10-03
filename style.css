@@ -1,0 +1,41 @@
+#video-call-div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#local-video {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 16px;
+    border-radius: 16px;
+    max-width: 100%;
+    max-height: 100%;
+    background: #ffffff;
+    justify-content: center;
+}
+
+#remote-video {
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.call-action-div {
+    position: relative;
+    right: 100%;
+    left: 100%;
+    bottom: 100px;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}

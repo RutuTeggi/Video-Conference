@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            background-color: #f0f0f0; /* Set your desired background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #container {
+            background-color: white; /* Set the background color of the content container */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            text-align: center; /* Center the text within the container */
+        }
+        /* Center the video elements within the container */
+        #video-call-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        video {
+            max-width: 100%; /* Ensure the video does not exceed the container's width */
+            margin-bottom: 10px; /* Add some spacing between videos */
+        }
+        /* Add any additional styles you need */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input placeholder="Enter username..."
+                type="text"
+                id="username-input" /><br>
+        <button onclick="joinCall()">Join Call</button>
+
+        <div id="video-call-div">
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <button onclick="muteVideo()">Mute Video</button>
+                <button onclick="muteAudio()">Mute Audio</button>
+            </div>
+        </div>
+    </div>
+    <script src="./receiver.js"></script>
+</body>
+</html>
